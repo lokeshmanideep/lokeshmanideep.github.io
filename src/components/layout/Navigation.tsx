@@ -53,7 +53,7 @@ export const Navigation: React.FC = () =>
                         className="text-lg font-semibold text-gray-900 transition-colors"
                         style={{ fontFamily: 'Agustina Regular, sans-serif' }}
                     >
-                        Home
+                        Lokesh Manideep
                     </Link>
 
                     <div className="hidden md:flex items-center gap-8">

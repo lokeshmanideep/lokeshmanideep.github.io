@@ -50,9 +50,10 @@ export const Navigation: React.FC = () =>
                 <div className="flex items-center justify-between h-16">
                     <Link
                         to="/"
-                        className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                        className="text-lg font-semibold text-gray-900 transition-colors"
+                        style={{ fontFamily: 'Agustina Regular, sans-serif' }}
                     >
-                        Portfolio
+                        Home
                     </Link>
 
                     <div className="hidden md:flex items-center gap-8">

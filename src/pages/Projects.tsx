@@ -40,7 +40,7 @@ export const Projects: React.FC = () =>
                                     key={category}
                                     onClick={() => setSelectedCategory( category )}
                                     className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-200 ${ selectedCategory === category
-                                        ? 'bg-gray-900 text-white shadow-lg'
+                                        ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20'
                                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                         }`}
                                 >
@@ -129,7 +129,7 @@ export const Projects: React.FC = () =>
                                     {project.detailContent && (
                                         <Link
                                             to={`/projects/${ project.id }`}
-                                            className="text-gray-600 hover:text-gray-900 font-medium transition-colors text-sm ml-auto"
+                                            className="text-blue-600 hover:text-blue-700 font-medium transition-colors text-sm ml-auto"
                                         >
                                             Read More →
                                         </Link>

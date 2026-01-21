@@ -54,7 +54,7 @@ export const Hero: React.FC = () =>
                                 href={social.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium"
+                                className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
                             >
                                 {social.platform === 'GitHub' && (
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

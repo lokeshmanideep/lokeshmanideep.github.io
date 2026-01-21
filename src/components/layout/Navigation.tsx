@@ -50,7 +50,7 @@ export const Navigation: React.FC = () =>
                 <div className="flex items-center justify-between h-16">
                     <Link
                         to="/"
-                        className="text-lg font-semibold text-gray-900 hover:text-gray-600 transition-colors"
+                        className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors"
                     >
                         Portfolio
                     </Link>
@@ -60,14 +60,14 @@ export const Navigation: React.FC = () =>
                             <button
                                 key={item.id}
                                 onClick={() => scrollToSection( item.id )}
-                                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                                className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
                             >
                                 {item.label}
                             </button>
                         ) )}
                         <Link
                             to="/projects"
-                            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                            className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
                         >
                             Projects
                         </Link>

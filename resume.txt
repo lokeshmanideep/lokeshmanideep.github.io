@@ -1,0 +1,48 @@
+Lokesh Manideep Boggavarapu
+(312)-593-4531 | lokeshmanideep14@gmail.com |LinkedIn | Portfolio | Google Scholar
+
+SUMMARY
+
+Senior Software & AI Engineer with 5+ years of experience bridging the gap between scalable backend infrastructure and modern AI. Deeply skilled in building end-to-end production systems using Java (Spring Boot), Python, while simultaneously pushing the edge with LLMs, RAG pipelines, and Agentic workflows. Proven track record of delivering high-impact engineering from architecting distributed systems processing 50K+ daily updates to developing NIDILRR-funded research platforms for healthcare. I specialize in core backend engineering, designing fault-tolerant microservices and event-driven architectures using Kafka and Kubernetes to process complex real-time data streams while ensuring strict data consistency across distributed systems.
+
+Work Experience
+
+
+University of Illinois Chicago | AI Engineer	Chicago, USA | Jun 2024 - Present
+Architected Discover, an NIDILRR-funded RAG platform using LangChain and Qdrant , implementing a semantic routing layer to synthesize psychiatric resources from 5 disparate university centers into a unified knowledge base
+Engineered a multimodal feature extraction pipeline using LangChain and OpenAI APIs to process 42K+ GoFundMe campaigns, implementing schema-enforced generation to quantify latent variables including medical complexity and visual sentiment from unstructured narratives and imagery
+Developed an event aggregation platform using FastAPI and MongoDB to unify 10+ university sources, exposing data via a custom MCP server to drive a RAG-based AI assistant for natural language discovery and automated calendar syncing
+Fine-tuned Mistral 7B on 54K samples using QLoRA (PEFT) to classify psychiatric conditions (Suicidal Ideation, Depression, Bipolar), achieving a 15% accuracy lift over base models while minimizing compute overhead
+
+Oravel Stays Private Limited(OYO)	
+Software Development Engineer - II	Gurgaon, India  | Jul 2023 - Dec 2023
+Engineered an automated CI/CD pipeline for the OYO Vacation Homes backend, enforcing rigid quality gates in a new PreProd environment which cut deployment lead time by 30%
+Designed the integration layer for TUI Ferienhaus, ingesting 100K+ bookings via a fault-tolerant Kubernetes microservice that handled schema validation and conflict resolution
+Built the Kafka service layer in Spring Boot to integrate real-time inventory and pricing data from four acquired companies, processing 50K+ price update operations per day across 10K+ properties while ensuring message ordering and downstream service compatibility
+Software Development Engineer - I	Gurgaon, India | Aug 2020 - Jun 2023
+Led the migration of OYO Vacation Homes backend services from on-premises servers to Azure, managing a 1.5TB data transfer while preserving service availability and reducing annual maintenance costs by €20K
+Developed OYO’s pricing tool using Flask, enabling automated pricing contract generation and an audit system to track contract changes, reducing contract sync time with the OVH backend by 40% and improving pricing accuracy
+Led migration of the pricing module from a legacy backend by rebuilding services in Spring Boot, deploying them via Kubernetes, and delivering a supporting React/TypeScript UI, ensuring data consistency and functional parity
+
+WIPRO | Associate Java Developer	Bangalore, India | May 2019 - Jul 2019
+Developed a web-based compliance monitoring application using Spring Boot for backend APIs and React for frontend, automating checks for 3 key compliance rules on IoT devices and generating detailed compliance reports
+Implemented real-time policy enforcement using Spring Boot, integrating AWS Lambda and DynamoDB for state tracking, automatically detecting non-compliant device configurations and triggering alerts to maintain regulatory adherence
+
+Education
+
+
+University of Illinois Chicago	GPA: 4.0
+Master of Science, Computer Science Engineering	Jan 2024 - Dec 2025
+National Institute of Technology Karnataka	GPA : 3.6
+Bachelor of Technology, Computer Science Engineering	Jun 2016 - Jun 2020
+
+Skills
+
+
+
+Languages: Java, Python, SQL, TypeScript, JavaScript, Swift, Bash/Shell
+AI Tools and Frameworks: OpenAI APIs, Gemini, LangChain, LangGraph, RAG, PEFT, Agentic Workflows
+Web Development Frameworks: Spring Boot, Maven, Gradle, FastAPI, Flask, Kafka, REST, GraphQL, React, Node.js
+Cloud & DevOps Platforms: AWS, Azure, GCP, Kubernetes, Docker, Jenkins, GitHub Actions, Git
+Databases: PostgreSQL, MySQL, MongoDB, Cassandra, Redis, NoSQL
+Vector Databases : Qdrant, Milvus, Pinecone

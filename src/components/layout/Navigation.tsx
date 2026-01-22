@@ -61,14 +61,14 @@ export const Navigation: React.FC = () =>
                             <button
                                 key={item.id}
                                 onClick={() => scrollToSection( item.id )}
-                                className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                             >
                                 {item.label}
                             </button>
                         ) )}
                         <Link
                             to="/projects"
-                            className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                         >
                             Projects
                         </Link>

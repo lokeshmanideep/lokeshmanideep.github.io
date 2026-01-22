@@ -10,13 +10,11 @@ export const ImageBlock: React.FC<ImageBlockProps> = ( { content, caption } ) =>
 {
     return (
         <figure className="mb-12">
-            <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50">
-                <img
-                    src={content}
-                    alt={caption || "Project image"}
-                    className="w-full h-auto"
-                />
-            </div>
+            <img
+                src={content}
+                alt={caption || "Project image"}
+                className="w-full h-96 object-contain"
+            />
             {caption && (
                 <figcaption className="text-center text-sm text-gray-500 mt-3">
                     {caption}

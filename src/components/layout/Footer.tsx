@@ -22,7 +22,7 @@ export const Footer: React.FC = () =>
                                 href={social.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-blue-400 transition-colors text-sm"
+                                className="hover:text-white transition-colors text-sm"
                             >
                                 {social.platform}
                             </a>

@@ -16,7 +16,7 @@ export const Projects: React.FC = () =>
                 <SectionTitle>Featured Projects</SectionTitle>
                 <Link
                     to="/projects"
-                    className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                    className="text-gray-900 hover:text-gray-600 font-medium transition-colors"
                 >
                     View All Projects →
                 </Link>
@@ -65,7 +65,7 @@ export const Projects: React.FC = () =>
                             {project.detailContent && (
                                 <Link
                                     to={`/projects/${ project.id }`}
-                                    className="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+                                    className="text-gray-900 hover:text-gray-600 font-semibold transition-colors"
                                 >
                                     Read More →
                                 </Link>

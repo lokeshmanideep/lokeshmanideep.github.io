@@ -92,8 +92,8 @@ export const ProjectDetail: React.FC = () =>
             <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-lg shadow-sm z-50">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8 py-4">
                     <Link
-                        to="/"
-                        className="inline-flex items-center text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                        to="/projects"
+                        className="inline-flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors"
                     >
                         <svg
                             className="w-5 h-5 mr-2"
@@ -108,7 +108,7 @@ export const ProjectDetail: React.FC = () =>
                                 d="M15 19l-7-7 7-7"
                             />
                         </svg>
-                        Back to Portfolio
+                        Back to Projects
                     </Link>
                 </div>
             </nav>
@@ -150,7 +150,7 @@ export const ProjectDetail: React.FC = () =>
                                         href={project.githubUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+                                        className="text-gray-900 hover:text-gray-600 font-semibold transition-colors"
                                     >
                                         View Code →
                                     </a>
@@ -160,7 +160,7 @@ export const ProjectDetail: React.FC = () =>
                                         href={project.liveUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+                                        className="text-gray-900 hover:text-gray-600 font-semibold transition-colors"
                                     >
                                         Live Demo →
                                     </a>

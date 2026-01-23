@@ -90,7 +90,10 @@ export const portfolioData: PortfolioData = {
       platform: "LinkedIn",
       url: "https://www.linkedin.com/in/lokesh-manideep-b0957412b/",
     },
-    { platform: "Medium", url: "https://medium.com/@lokeshmanideep14" },
+    {
+      platform: "Google Scholar",
+      url: "https://scholar.google.com/citations?user=AoOHlX0AAAAJ&hl=en",
+    },
     { platform: "Email", url: "mailto:lokeshmanideep14@gmail.com" },
   ],
   skills: [

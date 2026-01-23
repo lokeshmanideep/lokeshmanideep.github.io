@@ -36,7 +36,6 @@ export const Navigation: React.FC = () =>
     const navItems = [
         { id: 'experience', label: 'Experience' },
         { id: 'skills', label: 'Skills' },
-        { id: 'education', label: 'Education' },
     ];
 
     return (
@@ -66,6 +65,12 @@ export const Navigation: React.FC = () =>
                                 {item.label}
                             </button>
                         ) )}
+                        <Link
+                            to="/education"
+                            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                        >
+                            Education
+                        </Link>
                         <Link
                             to="/projects"
                             className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"

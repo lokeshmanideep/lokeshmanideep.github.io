@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Footer } from '../components/layout/Footer';
-import { Navigation } from '../components/layout/Navigation';
 import { portfolioData } from '../data/portfolio';
 
 type CategoryFilter = "All" | "AI/ML" | "Full-stack" | "Data Science" | "Other";
@@ -19,7 +18,6 @@ export const Projects: React.FC = () =>
 
     return (
         <>
-            <Navigation />
             <div className="min-h-screen bg-white pt-24 pb-20">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     {/* Header */}

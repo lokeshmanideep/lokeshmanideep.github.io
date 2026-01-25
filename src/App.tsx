@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Chat from './components/Chat';
 import { Footer } from './components/layout/Footer';
 import { Navigation } from './components/layout/Navigation';
 import Education from './pages/Education';
@@ -23,6 +24,7 @@ function App ()
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects/:projectId" element={<ProjectDetail />} />
         </Routes>
+        <Chat />
       </div>
     </Router>
   );

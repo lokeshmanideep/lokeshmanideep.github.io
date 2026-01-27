@@ -88,7 +88,7 @@ export const portfolioData: PortfolioData = {
     { platform: "GitHub", url: "https://github.com/lokeshmanideep" },
     {
       platform: "LinkedIn",
-      url: "https://www.linkedin.com/in/lokesh-manideep-b0957412b/",
+      url: "https://www.linkedin.com/in/lokeshmanideep/",
     },
     {
       platform: "Google Scholar",

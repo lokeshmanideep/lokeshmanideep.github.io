@@ -3,7 +3,7 @@ Lokesh Manideep Boggavarapu
 
 SUMMARY
 
-Senior Software & AI Engineer with 5+ years of experience bridging the gap between scalable backend infrastructure and modern AI. Deeply skilled in building end-to-end production systems using Java (Spring Boot), Python, while simultaneously pushing the edge with LLMs, RAG pipelines, and Agentic workflows. Proven track record of delivering high-impact engineering from architecting distributed systems processing 50K+ daily updates to developing NIDILRR-funded research platforms for healthcare. I specialize in core backend engineering, designing fault-tolerant microservices and event-driven architectures using Kafka and Kubernetes to process complex real-time data streams while ensuring strict data consistency across distributed systems.
+Senior Software & AI Engineer with 5+ years of experience bridging the gap between scalable backend infrastructure and modern AI. Deeply skilled in building end-to-end production systems using Java (Spring Boot), Python, while simultaneously pushing the edge with LLMs, RAG pipelines, and Agentic workflows. Proven track record of delivering high-impact engineering from architecting distributed systems processing 500K+ daily updates to developing NIDILRR-funded research platforms for healthcare. I specialize in core backend engineering, designing fault-tolerant microservices and event-driven architectures using Kafka and Kubernetes to process complex real-time data streams while ensuring strict data consistency across distributed systems.
 
 Work Experience
 
@@ -18,7 +18,7 @@ Oravel Stays Private Limited(OYO)
 Software Development Engineer - II	Gurgaon, India  | Jul 2023 - Dec 2023
 Engineered an automated CI/CD pipeline for the OYO Vacation Homes backend, enforcing rigid quality gates in a new PreProd environment which cut deployment lead time by 30%
 Designed the integration layer for TUI Ferienhaus, ingesting 100K+ bookings via a fault-tolerant Kubernetes microservice that handled schema validation and conflict resolution
-Built the Kafka service layer in Spring Boot to integrate real-time inventory and pricing data from four acquired companies, processing 50K+ price update operations per day across 10K+ properties while ensuring message ordering and downstream service compatibility
+Built the Kafka service layer in Spring Boot to integrate real-time inventory and pricing data from four acquired companies, processing 500K+ price update operations per day across 10K+ properties while ensuring message ordering and downstream service compatibility
 Software Development Engineer - I	Gurgaon, India | Aug 2020 - Jun 2023
 Led the migration of OYO Vacation Homes backend services from on-premises servers to Azure, managing a 1.5TB data transfer while preserving service availability and reducing annual maintenance costs by €20K
 Developed OYO’s pricing tool using Flask, enabling automated pricing contract generation and an audit system to track contract changes, reducing contract sync time with the OVH backend by 40% and improving pricing accuracy

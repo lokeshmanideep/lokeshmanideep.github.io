@@ -81,7 +81,7 @@ export const portfolioData: PortfolioData = {
     bio: [
       "Senior Software & AI Engineer with 5+ years of experience building end-to-end production systems using Java (Spring Boot), Python, and modern AI technologies.",
       "Specialized in architecting distributed systems, designing fault-tolerant microservices, and event-driven architectures using Kafka and Kubernetes.",
-      "Proven track record delivering high-impact engineering from systems processing 50K+ daily updates to NIDILRR-funded research platforms for healthcare.",
+      "Proven track record delivering high-impact engineering from systems processing 500K+ daily updates to NIDILRR-funded research platforms for healthcare.",
     ],
   },
   socials: [
@@ -175,7 +175,7 @@ export const portfolioData: PortfolioData = {
       description: [
         "Engineered automated CI/CD pipeline for OYO Vacation Homes backend, cutting deployment lead time by 30%",
         "Designed integration layer for TUI Ferienhaus, ingesting 100K+ bookings via fault-tolerant Kubernetes microservice",
-        "Built Kafka service layer processing 50K+ price updates daily across 10K+ properties",
+        "Built Kafka service layer processing 500K+ price updates daily across 10K+ properties",
         "Managed smooth data transfer during OYO's acquisition of TUI, ensuring business continuity",
       ],
       technologies: [

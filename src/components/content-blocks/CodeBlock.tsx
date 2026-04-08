@@ -16,8 +16,8 @@ export const CodeBlock: React.FC<CodeBlockProps> = ( {
 } ) =>
 {
     return (
-        <figure className="mb-12">
-            <div className="rounded-xl overflow-hidden border border-gray-200">
+        <figure className="mx-auto mb-12 max-w-4xl">
+            <div className="overflow-hidden rounded-[28px] border border-slate-200/80 shadow-[0_20px_60px_rgba(15,23,42,0.12)]">
                 <SyntaxHighlighter
                     language={language}
                     style={vscDarkPlus}
@@ -33,7 +33,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ( {
                 </SyntaxHighlighter>
             </div>
             {caption && (
-                <figcaption className="text-center text-sm text-gray-500 mt-3">
+                <figcaption className="mt-4 text-center text-sm text-slate-500">
                     {caption}
                 </figcaption>
             )}

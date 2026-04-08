@@ -8,8 +8,72 @@
   font-display: swap;
 }
 
+:root {
+  color-scheme: light;
+  --bg: #f6f8fc;
+  --bg-soft: #edf3ff;
+  --page-bg: #f6f8fc;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --surface-stronger: rgba(226, 232, 240, 0.96);
+  --line: rgba(148, 163, 184, 0.24);
+  --line-strong: rgba(148, 163, 184, 0.36);
+  --border-soft: rgba(148, 163, 184, 0.24);
+  --text: #111827;
+  --text-strong: #111827;
+  --text-soft: #5f6b7f;
+  --text-muted: #5f6b7f;
+  --accent: #5c78ff;
+  --accent-primary: #5c78ff;
+  --accent-soft: rgba(92, 120, 255, 0.12);
+  --accent-rose: #f2a7b8;
+  --accent-secondary: #f2a7b8;
+  --accent-mint: #b7e2d3;
+  --shadow: 0 24px 80px rgba(15, 23, 42, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(92, 120, 255, 0.09), transparent 26%),
+    radial-gradient(circle at top right, rgba(242, 167, 184, 0.08), transparent 24%),
+    radial-gradient(circle at 50% 0%, rgba(183, 226, 211, 0.1), transparent 22%),
+    linear-gradient(180deg, #fafbff 0%, var(--bg) 42%, #f4f7fb 100%);
+  background-attachment: fixed;
+}
+
+body::selection {
+  background: rgba(92, 120, 255, 0.18);
+  color: #0f172a;
+}
+
+::selection {
+  background: rgba(92, 120, 255, 0.18);
+  color: #0f172a;
+}
+
 @layer base {
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply text-gray-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 }

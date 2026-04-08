@@ -9,8 +9,8 @@ interface VideoBlockProps
 export const VideoBlock: React.FC<VideoBlockProps> = ( { url, caption } ) =>
 {
     return (
-        <figure className="mb-12">
-            <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-900 aspect-video">
+        <figure className="mx-auto mb-12 max-w-4xl">
+            <div className="aspect-video overflow-hidden rounded-[28px] border border-slate-200/80 bg-slate-950 shadow-[0_20px_60px_rgba(15,23,42,0.14)]">
                 <iframe
                     src={url}
                     className="w-full h-full"
@@ -20,7 +20,7 @@ export const VideoBlock: React.FC<VideoBlockProps> = ( { url, caption } ) =>
                 />
             </div>
             {caption && (
-                <figcaption className="text-center text-sm text-gray-500 mt-3">
+                <figcaption className="mt-4 text-center text-sm text-slate-500">
                     {caption}
                 </figcaption>
             )}

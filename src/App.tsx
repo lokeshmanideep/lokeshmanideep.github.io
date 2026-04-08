@@ -14,7 +14,29 @@ function Analytics() {
 
   useEffect(() => {
     pageview(location.pathname + location.search);
-  }, [location]);
+  }, [location.pathname, location.search]);
+
+  return null;
+}
+
+function ScrollManager() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = decodeURIComponent(location.hash.slice(1));
+
+      window.requestAnimationFrame(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname, location.hash]);
 
   return null;
 }
@@ -24,7 +46,8 @@ function App ()
   return (
     <Router>
       <Analytics />
-      <div className="min-h-screen bg-white">
+      <ScrollManager />
+      <div className="min-h-screen bg-[var(--page-bg)] text-[var(--text-strong)]">
         <Navigation />
         <Routes>
           <Route path="/" element={

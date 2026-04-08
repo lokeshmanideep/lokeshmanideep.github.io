@@ -10,24 +10,24 @@ interface LinkBlockProps
 export const LinkBlock: React.FC<LinkBlockProps> = ( { url, content, caption } ) =>
 {
     return (
-        <div className="mb-8">
+        <div className="mx-auto mb-8 max-w-3xl">
             <a
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200 bg-white"
+                className="group block rounded-[24px] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(248,250,252,0.88))] p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_24px_64px_rgba(15,23,42,0.08)]"
             >
                 <div className="flex items-center justify-between">
                     <div>
-                        <p className="text-lg font-medium text-gray-900 group-hover:text-gray-700 transition-colors">
+                        <p className="text-lg font-medium text-slate-950 transition-colors group-hover:text-slate-700">
                             {content}
                         </p>
                         {caption && (
-                            <p className="text-sm text-gray-500 mt-1">{caption}</p>
+                            <p className="mt-2 text-sm leading-6 text-slate-500">{caption}</p>
                         )}
                     </div>
                     <svg
-                        className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors"
+                        className="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-700"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

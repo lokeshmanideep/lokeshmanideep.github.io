@@ -12,6 +12,29 @@ const categoryLabels: Record<Skill[ 'category' ], string> = {
     tools: 'Tools'
 };
 
+const categoryStyles: Record<Skill[ 'category' ], { shell: string; accent: string }> = {
+    backend: {
+        shell: 'from-sky-50/80 via-white to-white',
+        accent: 'bg-sky-300',
+    },
+    database: {
+        shell: 'from-emerald-50/80 via-white to-white',
+        accent: 'bg-emerald-300',
+    },
+    devops: {
+        shell: 'from-amber-50/80 via-white to-white',
+        accent: 'bg-amber-300',
+    },
+    frontend: {
+        shell: 'from-rose-50/80 via-white to-white',
+        accent: 'bg-rose-300',
+    },
+    tools: {
+        shell: 'from-slate-50/80 via-white to-white',
+        accent: 'bg-slate-300',
+    },
+};
+
 export const Skills: React.FC = () =>
 {
     const { skills } = portfolioData;
@@ -30,31 +53,44 @@ export const Skills: React.FC = () =>
     const categoryOrder: Skill[ 'category' ][] = [ 'backend', 'database', 'devops', 'frontend', 'tools' ];
 
     return (
-        <SectionContainer id="skills" className="bg-white">
-            <SectionTitle>Technical Skills</SectionTitle>
+        <SectionContainer id="skills" className="bg-[#f7faf8]">
+            <SectionTitle subtitle="A compact map of the stack, organized by how the work tends to flow.">
+                Technical Skills
+            </SectionTitle>
 
-            <div className="space-y-10">
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {categoryOrder.map( ( category ) =>
                 {
                     const categorySkills = skillsByCategory[ category ];
                     if ( !categorySkills || categorySkills.length === 0 ) return null;
 
                     return (
-                        <div key={category}>
-                            <h3 className="text-lg font-semibold text-gray-700 mb-4">
-                                {categoryLabels[ category ]}
-                            </h3>
-                            <div className="flex flex-wrap gap-3">
+                        <article
+                            key={category}
+                            className={`rounded-3xl border border-slate-200/80 bg-gradient-to-br ${ categoryStyles[ category ].shell } p-6 shadow-[0_16px_40px_rgba(15,23,42,0.04)]`}
+                        >
+                            <div className="mb-5 flex items-center justify-between gap-4">
+                                <div className="flex items-center gap-3">
+                                    <span className={`h-2.5 w-2.5 rounded-full ${ categoryStyles[ category ].accent }`} />
+                                    <h3 className="text-lg font-semibold tracking-tight text-slate-900">
+                                        {categoryLabels[ category ]}
+                                    </h3>
+                                </div>
+                                <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-slate-500 ring-1 ring-slate-200">
+                                    {categorySkills.length}
+                                </span>
+                            </div>
+                            <div className="flex flex-wrap gap-2.5">
                                 {categorySkills.map( ( skill ) => (
                                     <span
                                         key={skill.name}
-                                        className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors"
+                                        className="rounded-full border border-white/70 bg-white/80 px-3.5 py-2 text-sm font-medium text-slate-700 shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:bg-white"
                                     >
                                         {skill.name}
                                     </span>
                                 ) )}
                             </div>
-                        </div>
+                        </article>
                     );
                 } )}
             </div>

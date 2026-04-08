@@ -232,6 +232,7 @@ export const portfolioData: PortfolioData = {
       technologies: ["Python", "LangChain", "Qdrant", "FastAPI", "OpenAI APIs"],
       date: "Jun 2024 - Present",
       category: "AI/ML",
+      coverImage: "/discover.png",
       highlights: [
         "Semantic routing across 5 university centers",
         "NIDILRR-funded research platform",
@@ -313,6 +314,7 @@ class SemanticRouter:
       technologies: ["Python", "LangChain", "OpenAI APIs", "Computer Vision"],
       date: "Aug 2024 - Dec 2024",
       category: "Data Science",
+      coverImage: "/collage.png",
       highlights: [
         "Processed 42K+ campaigns",
         "Multimodal data extraction",
@@ -326,6 +328,8 @@ class SemanticRouter:
       description:
         "Built a FastAPI-based platform unifying 10+ university event sources with MongoDB, exposing data via custom MCP server to power RAG-based AI assistant for natural language discovery and automated calendar syncing.",
       technologies: ["FastAPI", "MongoDB", "MCP", "RAG", "LangChain"],
+      liveUrl: "https://events-01v.pages.dev/",
+      coverImage: "/uicevents.png",
       date: "Sep 2024 - Present",
       category: "Full-stack",
       highlights: [
@@ -333,21 +337,6 @@ class SemanticRouter:
         "Custom MCP server integration",
         "Natural language discovery",
         "Automated calendar syncing",
-      ],
-    },
-    {
-      id: "psychiatric-classifier",
-      title: "Fine-tuned Psychiatric Classification Model",
-      description:
-        "Fine-tuned Mistral 7B on 54K samples using QLoRA (PEFT) to classify psychiatric conditions including Suicidal Ideation, Depression, and Bipolar disorder with 15% accuracy improvement over base models.",
-      technologies: ["Python", "Mistral 7B", "QLoRA", "PEFT", "HuggingFace"],
-      date: "Jul 2024 - Oct 2024",
-      category: "AI/ML",
-      highlights: [
-        "54K training samples",
-        "15% accuracy improvement",
-        "QLoRA optimization",
-        "Multi-class psychiatric classification",
       ],
     },
     {
@@ -366,6 +355,7 @@ class SemanticRouter:
       ],
       date: "2024",
       category: "Other",
+      coverImage: "/momproject.webp",
       githubUrl: "https://github.com/lokeshmanideep/whispers-of-wisdom",
       liveUrl:
         "https://www.youtube.com/playlist?list=PLPgC7mD72GJ_rUG0khmdx-7CNDjRmxu-X",
@@ -464,6 +454,7 @@ for episode, timestamps in krishna_moments.items():
       ],
       date: "2025 - 4 months",
       category: "Full-stack",
+      liveUrl: "https://www.youtube.com/shorts/prIm3pVBboU",
       highlights: [
         "Sole developer: frontend & backend",
         "MVVM-C architecture with Coordinator pattern",
@@ -586,6 +577,24 @@ class JournalViewModel {
           content:
             "## Results & Impact\n\nBuilding 'hi feelings' was a fantastic journey in full-stack iOS development. It strengthened my skills in architecting robust, user-focused, and maintainable applications from the ground up.\n\n- **Complete ownership** of frontend and backend development\n- **Production-ready** app available on TestFlight\n- **Clean architecture** ensuring scalability and maintainability\n- **Offline-first** design providing seamless user experience\n- **Modern iOS patterns** leveraging Combine, async/await, and protocol-oriented programming",
         },
+      ],
+    },
+    {
+      id: "psychiatric-classifier",
+      title: "Fine-tuned Psychiatric Classification Model",
+      description:
+        "Fine-tuned Mistral 7B on 54K samples using QLoRA (PEFT) to classify psychiatric conditions including Suicidal Ideation, Depression, and Bipolar disorder with 15% accuracy improvement over base models.",
+      technologies: ["Python", "Mistral 7B", "QLoRA", "PEFT", "HuggingFace"],
+      date: "Jul 2024 - Oct 2024",
+      coverImage: "/finetuning.png",
+      liveUrl:
+        "https://www.medrxiv.org/content/medrxiv/early/2025/03/10/2024.12.16.24317648.full.pdf",
+      category: "AI/ML",
+      highlights: [
+        "54K training samples",
+        "15% accuracy improvement",
+        "QLoRA optimization",
+        "Multi-class psychiatric classification",
       ],
     },
   ],

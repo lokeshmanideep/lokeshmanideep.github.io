@@ -76,9 +76,6 @@ export const Projects: React.FC = () =>
                                     </p>
                                 </div>
                             </div>
-                            <p className="mt-5 text-sm leading-6 text-slate-500">
-                                The emphasis here is on hierarchy, soft surfaces, and focused reading rather than dense black-and-white blocks.
-                            </p>
                         </div>
                     </div>
 

@@ -168,7 +168,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "exp-2",
-      company: "Oravel Stays (OYO Rooms)",
+      company: "OYO Rooms",
       position: "Software Development Engineer II",
       duration: "Jul 2023 - Dec 2023",
       location: "Gurgaon, India",
@@ -189,7 +189,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "exp-3",
-      company: "Oravel Stays (OYO Rooms)",
+      company: "OYO Rooms",
       position: "Software Development Engineer I",
       duration: "Aug 2020 - Jun 2023",
       location: "Gurgaon, India",

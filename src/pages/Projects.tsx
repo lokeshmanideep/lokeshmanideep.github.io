@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ProjectMedia } from '../components/ProjectMedia';
 import { Footer } from '../components/layout/Footer';
-import { portfolioData } from '../data/portfolio';
 import type { Project } from '../data/portfolio';
+import { portfolioData } from '../data/portfolio';
 
 type CategoryFilter = "All" | "AI/ML" | "Full-stack" | "Data Science" | "Other";
 
@@ -55,7 +55,7 @@ export const Projects: React.FC = () =>
                                 All Projects
                             </h1>
                             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 lg:text-xl lg:leading-9">
-                                A selected collection of systems, AI work, and full-stack builds presented with a calmer visual rhythm and more editorial spacing.
+                                A selected collection of systems, AI work, and full-stack projects.
                             </p>
                         </div>
 
@@ -89,10 +89,9 @@ export const Projects: React.FC = () =>
                                     type="button"
                                     key={category}
                                     onClick={() => setSelectedCategory( category )}
-                                    className={`inline-flex items-center rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-200 ${
-                                        selectedCategory === category
-                                            ? 'border-slate-950 bg-slate-950 text-white shadow-lg shadow-slate-950/15'
-                                            : 'border-slate-200 bg-white/90 text-slate-600 hover:border-slate-300 hover:text-slate-950'
+                                    className={`inline-flex items-center rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-200 ${ selectedCategory === category
+                                        ? 'border-slate-950 bg-slate-950 text-white shadow-lg shadow-slate-950/15'
+                                        : 'border-slate-200 bg-white/90 text-slate-600 hover:border-slate-300 hover:text-slate-950'
                                         }`}
                                 >
                                     {category}
@@ -108,9 +107,8 @@ export const Projects: React.FC = () =>
                         {filteredProjects.map( ( project, index ) => (
                             <div
                                 key={project.id}
-                                className={`group relative overflow-hidden rounded-[30px] border border-slate-200/80 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_26px_80px_rgba(15,23,42,0.08)] ${
-                                    index === 0 ? 'lg:col-span-2' : ''
-                                }`}
+                                className={`group relative overflow-hidden rounded-[30px] border border-slate-200/80 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_26px_80px_rgba(15,23,42,0.08)] ${ index === 0 ? 'lg:col-span-2' : ''
+                                    }`}
                             >
                                 <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-slate-900 via-sky-400 to-rose-200 opacity-80" />
                                 <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${ projectAccent( project.category ) } opacity-80`} />
@@ -166,7 +164,7 @@ export const Projects: React.FC = () =>
                                                     href={project.liveUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="font-medium text-slate-600 transition-colors hover:text-slate-950"
+                                                    className="font-semibold text-slate-950 transition-colors hover:text-slate-700"
                                                 >
                                                     Live Demo <span aria-hidden="true">→</span>
                                                 </a>

@@ -233,6 +233,7 @@ export const portfolioData: PortfolioData = {
       date: "Jun 2024 - Present",
       category: "AI/ML",
       coverImage: "/discover.png",
+      liveUrl: "https://deimos-kappa.vercel.app/",
       highlights: [
         "Semantic routing across 5 university centers",
         "NIDILRR-funded research platform",
@@ -315,6 +316,8 @@ class SemanticRouter:
       date: "Aug 2024 - Dec 2024",
       category: "Data Science",
       coverImage: "/collage.png",
+      liveUrl:
+        "https://docs.google.com/presentation/d/1g38uDS6XycchUexZqAWnpGXxvO9XXjlYmDE4KY6JGSk/edit?usp=sharing",
       highlights: [
         "Processed 42K+ campaigns",
         "Multimodal data extraction",

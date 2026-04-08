@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { portfolioData } from '../../data/portfolio';
 import type { Project } from '../../data/portfolio';
+import { portfolioData } from '../../data/portfolio';
 import { ProjectMedia } from '../ProjectMedia';
 import { SectionContainer } from '../layout/SectionContainer';
 import { SectionTitle } from '../layout/SectionTitle';
@@ -36,7 +36,6 @@ export const Projects: React.FC = () =>
             <div className="relative mb-12 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-2xl">
                     <SectionTitle
-                        subtitle="Selected work, presented with a little more breathing room and a calmer surface."
                     >
                         Featured Projects
                     </SectionTitle>
@@ -54,19 +53,17 @@ export const Projects: React.FC = () =>
                 {featuredProjects.map( ( project ) => (
                     <div
                         key={project.id}
-                        className={`group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white/85 shadow-[0_18px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_26px_80px_rgba(15,23,42,0.08)] ${
-                            project.id === featuredProjects[0]?.id ? 'md:col-span-2 md:p-8' : ''
-                        }`}
+                        className={`group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white/85 shadow-[0_18px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_26px_80px_rgba(15,23,42,0.08)] ${ project.id === featuredProjects[ 0 ]?.id ? 'md:col-span-2 md:p-8' : ''
+                            }`}
                     >
                         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-slate-900 via-sky-400 to-rose-200 opacity-80" />
                         <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${ projectAccent( project.category ) } opacity-80`} />
 
-                        <div className={`relative grid gap-0 ${ project.id === featuredProjects[0]?.id ? 'lg:grid-cols-[1.05fr_0.95fr]' : '' }`}>
+                        <div className={`relative grid gap-0 ${ project.id === featuredProjects[ 0 ]?.id ? 'lg:grid-cols-[1.05fr_0.95fr]' : '' }`}>
                             <ProjectMedia
                                 project={project}
-                                className={`border-b border-slate-200/80 lg:border-b-0 lg:border-r lg:border-slate-200/80 ${
-                                    project.id === featuredProjects[0]?.id ? 'h-64 lg:h-full lg:min-h-[23rem]' : 'h-64'
-                                }`}
+                                className={`border-b border-slate-200/80 lg:border-b-0 lg:border-r lg:border-slate-200/80 ${ project.id === featuredProjects[ 0 ]?.id ? 'h-64 lg:h-full lg:min-h-[23rem]' : 'h-64'
+                                    }`}
                             />
 
                             <div className="relative p-7 md:p-8">
@@ -122,7 +119,7 @@ export const Projects: React.FC = () =>
                                             href={project.liveUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-slate-600 transition-colors hover:text-slate-950"
+                                            className="font-semibold text-slate-950 transition-colors hover:text-slate-700"
                                         >
                                             Live Demo <span aria-hidden="true">→</span>
                                         </a>

@@ -185,7 +185,7 @@ export const ProjectDetail: React.FC = () =>
                                                 href={project.liveUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 hover:text-slate-950"
+                                                className="inline-flex items-center gap-2 rounded-full border border-slate-900/15 bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
                                             >
                                                 Live Demo <span aria-hidden="true">→</span>
                                             </a>
@@ -197,18 +197,6 @@ export const ProjectDetail: React.FC = () =>
                     </div>
 
                     <section className="mt-10 rounded-[32px] border border-slate-200/80 bg-white/88 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm lg:p-10">
-                        <div className="mb-8 flex items-center justify-between gap-4">
-                            <div>
-                                <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
-                                    Project narrative
-                                </p>
-                                <p className="mt-2 text-sm text-slate-500">
-                                    Detailed documentation, architecture, and implementation notes.
-                                </p>
-                            </div>
-                            <div className="hidden h-px flex-1 bg-slate-200 lg:block" />
-                        </div>
-
                         {project.detailContent ? (
                             <div className="space-y-0">
                                 {project.detailContent.map( ( block, index ) =>

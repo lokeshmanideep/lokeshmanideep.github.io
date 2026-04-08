@@ -4,15 +4,43 @@ import Chat from './components/Chat';
 import { Footer } from './components/layout/Footer';
 import { Navigation } from './components/layout/Navigation';
 import { pageview } from './data/analytics';
+import { portfolioData } from './data/portfolio';
 import Education from './pages/Education';
 import { Home } from './pages/Home';
 import { ProjectDetail } from './pages/ProjectDetail';
 import { Projects as ProjectsPage } from './pages/Projects';
 
+const defaultTitle = 'Lokesh Boggavarapu - Senior Software & AI Engineer';
+
+const getRouteTitle = (pathname: string) => {
+  if (pathname === '/') {
+    return defaultTitle;
+  }
+
+  if (pathname === '/projects') {
+    return 'Projects | Lokesh Boggavarapu';
+  }
+
+  if (pathname === '/education') {
+    return 'Education | Lokesh Boggavarapu';
+  }
+
+  if (pathname.startsWith('/projects/')) {
+    const projectId = pathname.replace('/projects/', '');
+    const project = portfolioData.projects.find((item) => item.id === projectId);
+    return project
+      ? `${project.title} | Lokesh Boggavarapu`
+      : 'Project | Lokesh Boggavarapu';
+  }
+
+  return defaultTitle;
+};
+
 function Analytics() {
   const location = useLocation();
 
   useEffect(() => {
+    document.title = getRouteTitle(location.pathname);
     pageview(location.pathname + location.search);
   }, [location.pathname, location.search]);
 

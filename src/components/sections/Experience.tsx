@@ -9,7 +9,7 @@ export const Experience: React.FC = () =>
 
     return (
         <SectionContainer id="experience" className="bg-[#f8fafc]">
-            <SectionTitle subtitle="Selected roles, framed as systems work, product delivery, and AI execution.">
+            <SectionTitle>
                 Experience
             </SectionTitle>
 

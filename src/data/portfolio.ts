@@ -308,41 +308,6 @@ class SemanticRouter:
       ],
     },
     {
-      id: "multimodal-pipeline",
-      title: "Multimodal Feature Extraction Pipeline",
-      description:
-        "Engineered a production pipeline processing 42K+ GoFundMe campaigns using LangChain and OpenAI APIs with schema-enforced generation to quantify latent variables from unstructured narratives and imagery.",
-      technologies: ["Python", "LangChain", "OpenAI APIs", "Computer Vision"],
-      date: "Aug 2024 - Dec 2024",
-      category: "Data Science",
-      coverImage: "/collage.png",
-      liveUrl:
-        "https://docs.google.com/presentation/d/1g38uDS6XycchUexZqAWnpGXxvO9XXjlYmDE4KY6JGSk/edit?usp=sharing",
-      highlights: [
-        "Processed 42K+ campaigns",
-        "Multimodal data extraction",
-        "Schema-enforced generation",
-        "Medical complexity quantification",
-      ],
-    },
-    {
-      id: "event-aggregation",
-      title: "Event Aggregation & AI Discovery Platform",
-      description:
-        "Built a FastAPI-based platform unifying 10+ university event sources with MongoDB, exposing data via custom MCP server to power RAG-based AI assistant for natural language discovery and automated calendar syncing.",
-      technologies: ["FastAPI", "MongoDB", "MCP", "RAG", "LangChain"],
-      liveUrl: "https://events-01v.pages.dev/",
-      coverImage: "/uicevents.png",
-      date: "Sep 2024 - Present",
-      category: "Full-stack",
-      highlights: [
-        "10+ university sources unified",
-        "Custom MCP server integration",
-        "Natural language discovery",
-        "Automated calendar syncing",
-      ],
-    },
-    {
       id: "python-moms-wish",
       title: "How I Used Python to Grant My Mom's Simple Wish",
       description:
@@ -438,6 +403,41 @@ for episode, timestamps in krishna_moments.items():
           content:
             "## See it in Action\n\nI hope you enjoyed the story behind the project. You can see the final result and dive into the code using the links below.\n\n🎧 [**The Playlist**](https://www.youtube.com/playlist?list=PLPgC7mD72GJ_rUG0khmdx-7CNDjRmxu-X) — Listen to Krishna's wisdom\n\n💻 [**The Code**](https://github.com/lokeshmanideep/whispers-of-wisdom) — Explore the automation pipeline on GitHub",
         },
+      ],
+    },
+    {
+      id: "multimodal-pipeline",
+      title: "Multimodal Feature Extraction Pipeline",
+      description:
+        "Engineered a production pipeline processing 42K+ GoFundMe campaigns using LangChain and OpenAI APIs with schema-enforced generation to quantify latent variables from unstructured narratives and imagery.",
+      technologies: ["Python", "LangChain", "OpenAI APIs", "Computer Vision"],
+      date: "Aug 2024 - Dec 2024",
+      category: "Data Science",
+      coverImage: "/collage.png",
+      liveUrl:
+        "https://docs.google.com/presentation/d/1g38uDS6XycchUexZqAWnpGXxvO9XXjlYmDE4KY6JGSk/edit?usp=sharing",
+      highlights: [
+        "Processed 42K+ campaigns",
+        "Multimodal data extraction",
+        "Schema-enforced generation",
+        "Medical complexity quantification",
+      ],
+    },
+    {
+      id: "event-aggregation",
+      title: "Event Aggregation & AI Discovery Platform",
+      description:
+        "Built a FastAPI-based platform unifying 10+ university event sources with MongoDB, exposing data via custom MCP server to power RAG-based AI assistant for natural language discovery and automated calendar syncing.",
+      technologies: ["FastAPI", "MongoDB", "MCP", "RAG", "LangChain"],
+      liveUrl: "https://events-01v.pages.dev/",
+      coverImage: "/uicevents.png",
+      date: "Sep 2024 - Present",
+      category: "Full-stack",
+      highlights: [
+        "10+ university sources unified",
+        "Custom MCP server integration",
+        "Natural language discovery",
+        "Automated calendar syncing",
       ],
     },
     {
